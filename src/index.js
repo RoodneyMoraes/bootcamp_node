@@ -6,8 +6,10 @@ const app = express();
 
 // CONFIGURANDO ROTA
 app.get('/', (request, response) => {
-    return response.json({message : 'Hello World'});
+    return response.json({message : 'Hello GoStack'});
 })
 
 // CONFIGURANDO PORTA
-app.listen(3333);
+app.listen(3333, () => {
+    console.log("🚀 Servidor iniciado!"); 
+});
